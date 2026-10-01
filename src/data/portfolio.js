@@ -5,7 +5,7 @@ export const projects = [
     type: 'Personal project',
     year: '2026',
     description: 'A bright match board for fair court rotations, QR player invites, and keeping every game’s wins and losses in view.',
-    stack: ['Court rotations', 'Team tracking', 'QR invites'],
+    stack: ['React', 'TypeScript', 'Supabase'],
     preview: '/queueq.png',
     href: 'https://queueq.vercel.app/',
   },

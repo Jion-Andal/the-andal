@@ -20,9 +20,10 @@ function App() {
           <span /><span />
         </button>
         <nav className={menuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
-          <a href="#work" onClick={closeMenu}>Work</a>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#recognition" onClick={closeMenu}>Recognition</a>
+          <a href="#work" onClick={closeMenu}>My Work</a>
+          <a href="#about" onClick={closeMenu}>About Me</a>
+          <a href="#experience" onClick={closeMenu}>Experience</a>
+          <a href="#recognition" onClick={closeMenu}>Recognitions</a>
           <a className="nav-contact" href="#contact" onClick={closeMenu}>Say hello <span>↗</span></a>
         </nav>
       </header>
@@ -32,12 +33,12 @@ function App() {
           <div className="hero-copy">
             <div className="eyebrow"><span className="status-dot" /> Analyst Programmer <span className="eyebrow-divider">/</span> Front-end Developer</div>
             <h1 id="hero-title">Thoughtful tech.<br /><span>People first.</span></h1>
-            <p className="hero-intro">I’m Edward Jion Andal, a front-end developer who likes making complex things feel a little more human.</p>
+            <p className="hero-intro">I’m Edward Jion Andal, a front-end developer who likes turning ideas into reality.</p>
             <div className="hero-actions">
               <a className="button button-dark" href="#work">Explore my work <span>↓</span></a>
               <a className="text-link" href="mailto:andaljion@gmail.com">Let’s talk <span>↗</span></a>
             </div>
-            <div className="hero-note"><span className="note-star">✳</span> Building useful things with care, curiosity &amp; a good team.</div>
+            <div className="hero-note"><span className="note-star">✳</span> Building useful things with care, curiosity &amp; an eye for perfection.</div>
           </div>
           <div className="hero-visual">
             <div className="portrait-backdrop" />
@@ -74,13 +75,13 @@ function App() {
             <div className="about-heading"><span className="section-kicker">The person behind the pixels</span><h2>Curious mind.<br /><span>Steady hands.</span></h2><span className="about-scribble">✳</span></div>
             <div className="about-content">
               <p className="about-lede">I’m a front-end developer and Analyst Programmer with a soft spot for clean interfaces, good collaboration, and figuring out how things work.</p>
-              <p>At Sun Life, I build responsive web experiences with React and Angular, connect interfaces to APIs, and help teams take features from a good idea to production. I’ve also worked across QA, API test automation, and the little alignment moments that help distributed teams move together.</p>
+              <p>Through out my career, I have built responsive web experiences with React and Angular, connected interfaces to APIs, and helped teams take features from a good idea to production. I’ve also worked across QA, API test automation, and the little alignment moments that help distributed teams move together.</p>
               <div className="skills-block"><span className="skills-label">Things I work with</span><div className="skills-list">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div></div>
             </div>
           </div>
         </section>
 
-        <section className="experience-section section-wrap">
+        <section className="experience-section section-wrap" id="experience">
           <div className="section-heading"><div><span className="section-kicker">The path so far</span><h2>Experience<span className="accent-dot">.</span></h2></div><span className="experience-aside">Good work is a team sport.</span></div>
           <div className="experience-list">
             {experience.map((role) => (
